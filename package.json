@@ -1,0 +1,30 @@
+{
+  "name": "xdg-screensaver",
+  "version": "0.0.0",
+  "description": "Start the screensaver",
+  "license": "MIT",
+  "repository": "kevva/xdg-screensaver",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Mårtensson",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "linux",
+    "screensaver",
+    "xdg"
+  ],
+  "devDependencies": {
+    "ava": "^0.0.4",
+    "xo": "*"
+  }
+}
