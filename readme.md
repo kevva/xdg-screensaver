@@ -1,4 +1,4 @@
-# xdg-screensaver [![Build Status](https://travis-ci.org/kevva/xdg-screensaver.svg?branch=master)](https://travis-ci.org/kevva/xdg-screensaver)
+# xdg-screensaver
 
 > Start the screensaver
 
