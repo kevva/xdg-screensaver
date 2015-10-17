@@ -1,13 +1,8 @@
 'use strict';
-var childProcess = require('child_process');
+var execFile = require('child_process').execFile;
+var pify = require('pify');
+var Promise = require('pinkie-promise');
 
-module.exports = function (cb) {
-	childProcess.execFile('xdg-screensaver', ['activate'], function (err) {
-		if (err) {
-			cb(err);
-			return;
-		}
-
-		cb();
-	});
+module.exports = function () {
+	return pify(execFile, Promise)('xdg-screensaver', ['activate']);
 };

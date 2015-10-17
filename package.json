@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -23,8 +23,17 @@
     "screensaver",
     "xdg"
   ],
+  "dependencies": {
+    "pify": "^2.2.0",
+    "pinkie-promise": "^1.0.0"
+  },
   "devDependencies": {
-    "ava": "^0.0.4",
+    "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
   }
 }

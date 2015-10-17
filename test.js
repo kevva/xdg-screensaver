@@ -1,11 +1,6 @@
-'use strict';
-var test = require('ava');
-var xdgScreensaver = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.plan(1);
-
-	xdgScreensaver(function (err) {
-		t.assert(!err, err);
-	});
+test(async t => {
+	await fn();
 });

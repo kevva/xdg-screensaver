@@ -13,9 +13,9 @@ $ npm install --save xdg-screensaver
 ## Usage
 
 ```js
-var xdgScreensaver = require('xdg-screensaver');
+const xdgScreensaver = require('xdg-screensaver');
 
-xdgScreensaver(function (err) {
+xdgScreensaver().then(() => {
 	console.log('Screensaver started');
 });
 ```
@@ -23,13 +23,9 @@ xdgScreensaver(function (err) {
 
 ## API
 
-### xdgScreensaver(callback)
+### xdgScreensaver()
 
-#### callback
-
-Type: `function`
-
-Returns nothing but a possible exception.
+Returns a promise that resolves nothing.
 
 
 ## License
