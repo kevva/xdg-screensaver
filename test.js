@@ -1,11 +1,10 @@
-'use strict';
-var test = require('ava');
-var xdgScreensaver = require('./');
+import test from 'ava';
+import xdgScreensaver from './';
 
-test(function (t) {
+test(t => {
 	t.plan(1);
 
-	xdgScreensaver(function (err) {
+	xdgScreensaver(err => {
 		t.assert(!err, err);
 	});
 });
